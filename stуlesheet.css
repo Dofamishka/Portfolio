@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600&family=Tenor+Sans&display=swap');
+
+body {
+    margin: 0;
+   padding: 0;
+}
+#hello_world{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   text-align: center;    
+   background-color: rgba(105, 105, 105, 0.945);
+   z-index: 1200;
+   position: absolute;
+}
+
+.backround {
+    top: 50%;
+    font-size: 60px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+
+
+
+
+header {
+    background-color: #070707;
+    padding-bottom: 15px;
+}
+
+menu {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+footer {
+    background-color: #000000;
+
+}
+
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Cormorant', serif;
+    font-size: 48px;
+
+
+}
+
+h2 {
+    color: #ffffffa8;
+    font-family: 'Cormorant', serif;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+h3 {
+    color: #000000;
+    font-family: 'Cormorant', serif;
+    font-size: 50px;
+    line-height: 30px;
+}
+
+h4 {
+    color: #000000;
+    font-family: 'Cormorant', serif;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+h5 {
+    color: #000000;
+    font-family: 'Cormorant', serif;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+header p {
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff9a;
+}
+
+p {
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #292727;
+}
+
+footer p {
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0px;
+    padding: 20px;
+    color: #ffffff9a;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(150, 150, 150);
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(255, 252, 241);
+}
+
+
+div .btn {
+    width: 300px;
+    height: 35px;
+}
+
+blockquote .btn {
+    color: #ffffffbe
+}
+
+.navbar {
+    padding-right: 0;
+}
+
+
+li.nav-item:last-child a.nav-link {
+    padding-right: 0;
+}
+
+.crumb a+a:before {
+    padding: 8px;
+    content: "/\00a0";
+
+}
+
+.crumb {
+    background-color: hsla(50, 27%, 87%, 0.212);
+    text-align: center;
+
+}
+
+.crumb a {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.crumb a:hover {
+    color: #949184;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+div ul li a {
+    color: #000000;
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+
+ul li a i:hover {
+    color: #E7E4D5;
+}
+
+ .lin  :hover {
+    color: #E7E4D5;
+}
+
+.form-row {
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.lin {
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.img_oboMne {
+    padding: 0;
+}
+
+.block_oboMne_1 {
+    background-color: #dad0d0;
+    margin: 0;
+}
+
+.block_oboMne_2 {
+    background-color: #ece3e3;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+#button {
+    display: inline-block;
+    background-color: #949184;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    opacity: 0;
+    z-index: 1000;
+    visibility: hidden;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: hsla(0, 6%, 75%, 0.514);
+    text-decoration: none;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #312f2a;
+
+}
+
+#button.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/*Для телефона*/
+@media (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    div .btn {
+        width: 170px;
+        height: 35px;
+    }
+
+    blockquote .btn {
+        width: 170px;
+        height: 35px;
+    }
+
+    .slider_block {
+        display: none;
+    }
+}
